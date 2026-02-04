@@ -10,14 +10,13 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
-    wakeup_scan: wakeup_scan {
-        compatible = "zmk,gpio-key-wakeup-trigger";
-        trigger = <&soft_off_gpio_key>;
-        wakeup-source;
-        extra-gpios = <&gpio0 12 GPIO_ACTIVE_HIGH>;
+    kscan: kscan {
+        compatible = "zmk,kscan-gpio-matrix";
+        diode-direction = "col2row";
+        wakeup-source;  // 启用按键唤醒
+        // ... 其他配置
     };
 };
-
 
 / {
     keymap {
