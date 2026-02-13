@@ -18,10 +18,10 @@
 #
 ---
 include:
-  - board: nrf52840
+  - board: nrfmicro_nrf52840
     shield: lily58_left
 
-  - board: nrf52840
+  - board: nrfmicro_nrf52840
     shield: lily58_right nice_view_adapter nice_view
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
