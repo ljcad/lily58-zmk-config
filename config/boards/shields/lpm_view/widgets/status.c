@@ -94,7 +94,7 @@ static void draw_top(lv_obj_t *widget, const struct status_state *state) {
 
     char wpm_text[6] = {};
     snprintf(wpm_text, sizeof(wpm_text), "%d", state->wpm[9]);
-    canvas_draw_text(canvas, 42, 52, 24, &label_dsc_wpm, wpm_text);
+    canvas_draw_text(canvas, 42, 42, 24, &label_dsc_wpm, wpm_text);
 
     int max = 0;
     int min = 256;
